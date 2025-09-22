@@ -1,15 +1,12 @@
 CREATE DATABASE ShopDB;
 
-
-
 USE ShopDB;
-
 
 CREATE TABLE Products (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     Name VARCHAR(100),
-    Description VARCHAR(255),
-    Price DECIMAL(10, 2),
+    Description VARCHAR(100),
+    Price INT,
     WarehouseAmount INT
 );
 
@@ -18,7 +15,7 @@ CREATE TABLE Customers (
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
     Email VARCHAR(100),
-    Address VARCHAR(255)
+    Address VARCHAR(100)
 );
 
 CREATE TABLE Orders (
